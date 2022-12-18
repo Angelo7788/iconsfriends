@@ -1,0 +1,20 @@
+.Home {
+    text-align: center;
+}
+
+.Home-header {
+    background-color: rgb(57, 145, 177);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(64, 48, 216);
+}
+
+.Home-text {
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+}

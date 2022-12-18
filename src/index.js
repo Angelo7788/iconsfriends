@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
+// import Home from './Home';
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
+import { family } from './Family';
+import Cardlist from './Cardlist';
+
+
+
+//npm install tachyons@4.12.0 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Cardlist family={family} />
   </React.StrictMode>
 );
 
