@@ -5,8 +5,7 @@ import './index.css';
 // import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-import { family } from './Family';
-import Cardlist from './Cardlist';
+import App from './App';
 
 
 
@@ -15,7 +14,7 @@ import Cardlist from './Cardlist';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Cardlist family={family} />
+    <App />
   </React.StrictMode>
 );
 
