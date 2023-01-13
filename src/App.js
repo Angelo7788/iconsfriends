@@ -3,6 +3,8 @@ import Cardlist from './Cardlist';
 import { family } from './Family';
 import './index.css';
 import SearchBox from './SearchBox';
+import './App.css';
+
 
 
 const App = () => {
@@ -27,7 +29,7 @@ const App = () => {
 
     return(
         <div className='tc' >
-            <h1 className='Header' >Icons Family</h1>
+            <h1 className='f1' >Icons Family</h1>
             <SearchBox onSearch={onSearchChange} />
             <Cardlist family={filteredFamily} />
         </div>

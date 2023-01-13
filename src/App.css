@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Jealous Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Jealous Regular'), url('Jealous-1GJDe.woff') format('woff');
+    }
+
+h1 {
+    font-family: 'Jealous Regular';
+    font-weight: 200;
+    color: lightgrey;
+
+}
+
+
