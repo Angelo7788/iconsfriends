@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import Cardlist from './Cardlist';
-import './index.css';
-import SearchBox from './SearchBox';
+import Cardlist from '../component/Cardlist';
+import '../index.css';
+import SearchBox from '../component/SearchBox';
 import './App.css';
-
-
+import Scroll from '../component/Scroll';
 
 const App = () => {
 
@@ -28,25 +27,22 @@ const App = () => {
         .then(setLoading(false));     
     },[]);
 
-
     const filteredFamily = familyObjState.familyMember.filter(familyMember => {
-        return familyMember.name.toLocaleLowerCase().includes(familyObjState.searchField.toLocaleLowerCase())
+        return familyMember.name.toLocaleLowerCase()
+        .includes(familyObjState.searchField.toLocaleLowerCase())
     });
 
-    
-
     return(
-
         <div className='tc' >
-
             { loading && (
                 <h1>Loading....</h1>
             )}
             
             <h1 className='f1' >Icons Family</h1>
             <SearchBox onSearch={onSearchChange} />
-            <Cardlist family={filteredFamily} />
-            
+            <Scroll>
+                <Cardlist family={filteredFamily} />
+            </Scroll>   
         </div>
     )
 }
