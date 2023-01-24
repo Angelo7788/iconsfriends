@@ -4,6 +4,7 @@ import '../index.css';
 import SearchBox from '../component/SearchBox';
 import './App.css';
 import Scroll from '../component/Scroll';
+import ErrorBoundry from '../component/ErrorBoundry';
 
 const App = () => {
 
@@ -41,7 +42,9 @@ const App = () => {
             <h1 className='f1' >Icons Family</h1>
             <SearchBox onSearch={onSearchChange} />
             <Scroll>
-                <Cardlist family={filteredFamily} />
+                <ErrorBoundry>
+                    <Cardlist family={filteredFamily} />
+                </ErrorBoundry>
             </Scroll>   
         </div>
     )
