@@ -2,6 +2,10 @@ import React from "react";
 import Card from './Card';
 
 const Cardlist = ( {family} ) => {
+
+  // if (true) {
+  //   throw new Error('Noooo!')
+  // }
     
     return(
     <div>
