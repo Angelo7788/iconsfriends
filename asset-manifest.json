@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5475c983.css",
+    "main.js": "/static/js/main.842f6ecc.js",
+    "static/js/787.dc456cd6.chunk.js": "/static/js/787.dc456cd6.chunk.js",
+    "static/media/Jealous-1GJDe.woff": "/static/media/Jealous-1GJDe.2d3b00db883061fd3966.woff",
+    "index.html": "/index.html",
+    "main.5475c983.css.map": "/static/css/main.5475c983.css.map",
+    "main.842f6ecc.js.map": "/static/js/main.842f6ecc.js.map",
+    "787.dc456cd6.chunk.js.map": "/static/js/787.dc456cd6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5475c983.css",
+    "static/js/main.842f6ecc.js"
+  ]
+}
